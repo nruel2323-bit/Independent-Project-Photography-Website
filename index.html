@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <img class="logo" src="logo.PNG" alt="Logo">
+    <h1>MY PHOTOGRAPHY WEBSITE</h1>
+        <section>
+            <div class="nav">
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#PORTFOLIO">PORTFOLIO</a>
+            <a href="#CONTACT">CONTACT</a>
+            </div>
+        </section>
+    </header>
+        
+<main>
+        <section id="HOME" class="display">
+            <!-- yoo image -->
+            <img class="yoo" src="WhatsApp Image 2026-04-21 at 11.44.04.jpeg" alt="yoo">
+            <!-- The text -->
+            <div class="flexing">
+            <h1 class="font">HELLO GUYS I'M RUEL</h1>
+        <p class="bio">A professional AI Engineer with high level of skill in Tech<br>and an architectural photographer.I would love to share my experiences with you</p>
+        </div>
+        </section>
+        <section id="ABOUT" class="border-alignment">
+            <h2>I TELL THE STORY OF THE TIME</h2>
+            <p>I'm an an AI engineer who teaches machines to see.<br>Photography reminds me how humans do it.<br>This is where code meets capture</p>
+        <img class="yoo" src="tech.PNG" alt="tech">
+        </section>
+        <section class="border alignment">
+           <section id="PORTFOLIO">
+            <h2>MY PORTFOLIO</h2>
+            <p>Here are some of my works</p>
+            </section>
+            <!-- wrap the cards in a flex container-->
+            <div class="card-row">
+                <!-- Left card -->
+                 <div class="left-card">
+                <h1>Built AI agents</h1>
+                <p>Developed intelligent AI agents for various applications</p>
+            <img class="yoo" src="AI.PNG" alt="">
+            </div>
+            <!-- Right card -->
+            <div class="right-card">
+                <h1>Created Photographic Projects</h1>
+                <p>Executed various photographic projects with creative vision</p>
+                <img class="yoo" src="photography.PNG" alt="">
+            </div>
+            </section>
+            <section class="border">
+                <div class="card-row-2">
+            <div class="right-card-2">
+                <h1>Published Research Papers</h1>
+                <p>Authored multiple research papers on AI and photography</p>
+                <img class="yoo" src="research.PNG" alt="">
+            </div>
+            <div class="left-card-2">
+                <h1>Conducted Workshops</h1>
+                <p>Organized workshops to share knowledge on AI and photography</p>
+                <img class="yoo" src="workshop.PNG" alt="">
+            </div>
+            </div>
+        </section>
+        <section class="contact" id="CONTACT">
+ <div class="contact-container">
+  <h1>CONTACT ME</h1>
+  <p>Please enter your details below.</p>
+
+  <form id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Ruel Ndege" required>
+    
+    <input type="email" id="email" name="email" placeholder="nruel2323@gmail.com" required>
+    
+    <textarea id="message" name="message" rows="5" placeholder="HELLO I LOVE URE WEBPAGE" required></textarea>
+    
+    <button type="submit">SEND MESSAGE</button>
+  </form>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  if (!name || !email || !message) {
+    alert('Please fill in all fields.');
+    return;
+  }
+  
+  alert(`Thanks, ${name}! Your message has been received. We'll reply to ${email} soon.`    );
+  this.reset();
+});
+</script>       
+  </div>
+</section>
+    </main>
+    <footer>
+        <p>© My Photography Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
